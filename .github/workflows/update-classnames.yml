@@ -12,6 +12,5 @@ jobs:
     steps:
       - uses: FedeIlLeone/discord-update-classnames@test
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           files: "src/theme/"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
