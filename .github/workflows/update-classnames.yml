@@ -10,7 +10,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: fedeericodl/discord-update-classnames@main
+      - uses: fedeericodl/discord-update-classnames@test
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: "src/theme/"
