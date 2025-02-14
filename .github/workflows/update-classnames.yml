@@ -10,7 +10,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: fedeericodl/discord-update-classnames@test
+      - uses: actions/checkout@v4
+
+      - name: Run Class Name Updater
+        uses: fedeericodl/discord-update-classnames@test
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           files: "src/theme/"
